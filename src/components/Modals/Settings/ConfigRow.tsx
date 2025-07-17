@@ -3,7 +3,7 @@ import type { Config } from "../../../types/marketplace-types";
 import TooltipIcon from "../../Icons/TooltipIcon";
 import SortBox from "../../Sortbox";
 import Toggle from "../../Toggle";
-const Spicetify = window.Spicetify;
+import Tooltip from "../../Tooltip";
 
 const ConfigRow = (props: {
   name: string;
@@ -60,7 +60,7 @@ const ConfigRow = (props: {
               return item.key === props.modalConfig.visual[props.storageKey];
             }}
           />
-          <Spicetify.ReactComponent.TooltipWrapper
+          <Tooltip
             label={props.description.split("\n").map((line) => {
               return (
                 <span key={line}>
@@ -78,7 +78,7 @@ const ConfigRow = (props: {
             <div className="marketplace-tooltip-icon">
               <TooltipIcon />
             </div>
-          </Spicetify.ReactComponent.TooltipWrapper>
+          </Tooltip>
         </div>
       </div>
     );

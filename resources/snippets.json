@@ -266,7 +266,7 @@
   {
     "title": "Hide now playing view button",
     "description": "Hides the now playing view button from the playbar",
-    "code": "button:has(path[d='M11.196 8 6 5v6l5.196-3z']) {display: none;}",
+    "code": "button:has(path[d='M11.196 8 6 5v6l5.196-3z']), button:has(path[d='M11.196 8 6 5v6z']) {display: none;}",
     "preview": "resources/assets/snippets/hide-now-playing-view-button.png"
   },
   {
@@ -404,7 +404,7 @@
   {
     "title": "Hide Mini Player Button",
     "description": "Hides the Mini Player button.",
-    "code": "button:has(path[d='M16 2.45c0-.8-.65-1.45-1.45-1.45H1.45C.65 1 0 1.65 0 2.45v11.1C0 14.35.65 15 1.45 15h5.557v-1.5H1.5v-11h13V7H16V2.45z']) {display: none;}",
+    "code": "button:has(path[d='M16 2.45c0-.8-.65-1.45-1.45-1.45H1.45C.65 1 0 1.65 0 2.45v11.1C0 14.35.65 15 1.45 15h5.557v-1.5H1.5v-11h13V7H16V2.45z']), button:has(path[d='M16 2.45c0-.8-.65-1.45-1.45-1.45H1.45C.65 1 0 1.65 0 2.45v11.1C0 14.35.65 15 1.45 15h5.557v-1.5H1.5v-11h13V7H16z']) {display: none;}",
     "preview": "resources/assets/snippets/Hide-Mini-Player-Button.png"
   },
   {
@@ -446,7 +446,7 @@
   {
     "title": "Rounded Buttons",
     "description": "Add rounded coners to buttons and search bar",
-    "code": ".x-filterBox-expandButton, .main-avatar-avatar, .main-topBar-buddyFeed, .main-topBar-button, .Button-sc-1dqy6lx-0, .main-coverSlotCollapsed-expandButton, .NqzueDshzvgXEygqOGPG { border-radius: 15% !important; } .XNFZdOLgMlx491fEWdYJ, .ChipClear__ChipClearComponent-sc-zv5btm-0, .Button-sc-1dqy6lx-0, .Button-sc-y0gtbx-0, .main-nowPlayingView-aboutArtistV2FollowButton, .main-playPauseButton-button, .ButtonInner-sc-14ud5tc-0, .search-searchCategory-carouselButton, .ChipInnerComponent-sm, .ChipInnerComponent-sm-selected, .switch, .arrow-btn, .pSxFsY9Fgcj5f8Gf05mh, .qyKJPLjz8o4jnbk92JOn, .reset, .rdp-button, .btn, .TabItem__StyledTabItem-sc-2ani5y-0, .main-embedWidgetGenerator-closeBtn, .main-playlistEditDetailsModal-closeBtn, .profile-userEditDetails-closeButton,  .mKUj4tXOjumlcv0q9Qta, .Chip__ChipComponent-sc-ry3uox-0, .LegacyChipInner__ChipInnerComponent-sc-1qguixk-0, .sHDdcNIw9AQLbLrpdcqO, .view-homeShortcutsGrid-playButton, .ButtonInner-medium-iconOnly,  .button-module__button___hf2qg_marketplace, .link-subtle, .yDdtQxGIyqWU3GNrntPu, .AIlmv6h8bR5NY5R0VceT, .e-9640-baseline, .XlmJIRaVv7a23oYq6lwU, .main-card-PlayButtonContainer, .e-9800-baseline, .e-9812-baseline, .e-9890-baseline, .e-9911-baseline, .BfALkuQy0UjTI70U9QlQ { border-radius: 6px !important; } .ButtonInner-large-iconOnly, .tLjX9htIKD_OCmEX01UN { border-radius: 12px !important; } .main-globalNav-searchInputContainer, .SFAoASy0S_LZJmYZ3Fh9, .x-searchInput-searchInputInput,  .toggle-module__toggle-indicator-wrapper___6Lcp0_marketplace, .x-toggle-indicatorWrapper, .main-topBar-searchBar { border-collapse: separate; border-radius: 6px !important; }",
+    "code": ".x-filterBox-expandButton, .main-avatar-avatar, .main-topBar-buddyFeed, .main-topBar-button, .Button-sc-1dqy6lx-0, .main-coverSlotCollapsed-expandButton, .NqzueDshzvgXEygqOGPG { border-radius: 15% !important; } .XNFZdOLgMlx491fEWdYJ, .ChipClear__ChipClearComponent-sc-zv5btm-0, .Button-sc-1dqy6lx-0, .Button-sc-y0gtbx-0, .main-nowPlayingView-aboutArtistV2FollowButton, .main-playPauseButton-button, .ButtonInner-sc-14ud5tc-0, .search-searchCategory-carouselButton, .ChipInnerComponent-sm, .ChipInnerComponent-sm-selected, .switch, .arrow-btn, .pSxFsY9Fgcj5f8Gf05mh, .qyKJPLjz8o4jnbk92JOn, .reset, .rdp-button, .btn, .TabItem__StyledTabItem-sc-2ani5y-0, .main-embedWidgetGenerator-closeBtn, .main-playlistEditDetailsModal-closeBtn, .profile-userEditDetails-closeButton,  .mKUj4tXOjumlcv0q9Qta, .Chip__ChipComponent-sc-ry3uox-0, .LegacyChipInner__ChipInnerComponent-sc-1qguixk-0, .sHDdcNIw9AQLbLrpdcqO, .view-homeShortcutsGrid-playButton, .ButtonInner-medium-iconOnly,  .button-module__button___hf2qg_marketplace, .link-subtle, .yDdtQxGIyqWU3GNrntPu, .AIlmv6h8bR5NY5R0VceT, .e-9640-baseline, .XlmJIRaVv7a23oYq6lwU, .main-card-PlayButtonContainer, .e-9800-baseline, .e-9812-baseline, .e-9890-baseline, .e-9911-baseline, .e-9921-baseline, .e-9960-baseline, .BfALkuQy0UjTI70U9QlQ, .ka4wGy_b04LNCthHIH1N, .uKWufPQjLFxGolUWWIqH { border-radius: 6px !important; } .ButtonInner-large-iconOnly, .tLjX9htIKD_OCmEX01UN { border-radius: 12px !important; } .main-globalNav-searchInputContainer, .SFAoASy0S_LZJmYZ3Fh9, .x-searchInput-searchInputInput,  .toggle-module__toggle-indicator-wrapper___6Lcp0_marketplace, .x-toggle-indicatorWrapper, .main-topBar-searchBar { border-collapse: separate; border-radius: 6px !important; }",
     "preview": "resources/assets/snippets/rounded-buttons.png"
   },
   {
@@ -502,5 +502,23 @@
     "description": "Hides the 'Scroll through previews of tracks' button from albums/playlists",
     "code": ".main-actionBar-exploreButton { display: none !important; }",
     "preview": "resources/assets/snippets/hide-scroll-through-previews.png"
+  },
+  {
+    "title": "Jumping ZeroTwo",
+    "description": "Adds ZeroTwo onto your progress bar.",
+    "code": ".player-controls .playback-progressbar::before { content: ''; width: 32px; height: 32px; bottom: calc(100% - 4px); left: 10px; position: absolute; image-rendering: pixelated; background-size: 32px 32px; background-image: url('https://media.tenor.com/vuMDJNZY76sAAAAi/jumping-blushing.gif'); }",
+    "preview": "resources/assets/snippets/jumping-zerotwo.png"
+  },
+  {
+    "title": "BMO Progressbar",
+    "description": "Adds a dancing BMO to the Progress Bar.",
+    "code": ".player-controls .playback-progressbar::before { content: ''; width: 45px; height: 45px; bottom: calc(100% - 6px); right: 10px; position: absolute; image-rendering: high-quality; background-size: 45px 45px; background-image: url('https://64.media.tumblr.com/38ff0368992c9f601ee746469f9a19c1/tumblr_mqf4asbozS1qmkil9o1_500.gif'); }",
+    "preview": "resources/assets/snippets/bmo-dancing.png"
+  },
+  {
+    "title": "Moving Minecraft Bee",
+    "description": "Adds a Minecraft Bee to the Progress Bar which follows throughout the duration of the track.",
+    "code": ".player-controls .playback-progressbar .progress-bar::before { content: ''; width: 55px; height: 55px; bottom: calc(40%); left: var(--progress-bar-transform); position: absolute; transition: left var(--progress-bar-duration); transform: translate(-15px, 0px); image-rendering: auto; background-size: 55px 55px; background-image: url('https://i.imgur.com/1oyD6fu.gif'); }",
+    "preview": "resources/assets/snippets/minecraft-bee-snippet.gif"
   }
 ]

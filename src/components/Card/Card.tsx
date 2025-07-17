@@ -10,8 +10,10 @@ import Button from "../Button";
 import DownloadIcon from "../Icons/DownloadIcon";
 import GitHubIcon from "../Icons/GitHubIcon";
 import TrashIcon from "../Icons/TrashIcon";
+import Tooltip from "../Tooltip";
 import AuthorsDiv from "./AuthorsDiv";
 import TagsDiv from "./TagsDiv";
+
 const Spicetify = window.Spicetify;
 
 export type CardProps = {
@@ -466,6 +468,7 @@ export class Card extends React.Component<
     }
 
     return (
+      // biome-ignore lint/a11y/noStaticElementInteractions: Card is clickable
       <div
         className={cardClasses.join(" ")}
         onClick={() => {
@@ -542,10 +545,7 @@ export class Card extends React.Component<
               </div>
             ) : null}
             {IS_INSTALLED && <div className="marketplace-card__bottom-meta main-type-mestoBold">✓ {t("grid.installed")}</div>}
-            <Spicetify.ReactComponent.TooltipWrapper
-              label={this.props.type === "app" ? t("github") : IS_INSTALLED ? t("remove") : t("install")}
-              renderInline={true}
-            >
+            <Tooltip label={this.props.type === "app" ? t("github") : IS_INSTALLED ? t("remove") : t("install")} renderInline={true}>
               <div className="main-card-PlayButtonContainer">
                 <Button
                   classes={["marketplace-installButton"]}
@@ -563,7 +563,7 @@ export class Card extends React.Component<
                   {this.props.type === "app" ? <GitHubIcon /> : IS_INSTALLED ? <TrashIcon /> : <DownloadIcon />}
                 </Button>
               </div>
-            </Spicetify.ReactComponent.TooltipWrapper>
+            </Tooltip>
           </div>
         </div>
       </div>

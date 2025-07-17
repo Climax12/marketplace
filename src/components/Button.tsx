@@ -1,4 +1,3 @@
-// biome-ignore lint/style/useImportType: React is not a type
 import React from "react";
 
 import styles from "../styles/modules/button.module.scss";
@@ -12,7 +11,7 @@ const Button = (props: {
   classes?: string[];
   label?: string | null;
   type?: ButtonType;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   disabled?: boolean;
 }) => {
   const buttonType = props.type || "round";
