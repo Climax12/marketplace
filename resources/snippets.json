@@ -1,5 +1,11 @@
 [
   {
+    "title": "Hamsters Dancing",
+    "description": "Adds a couple of dancing hamsters on the playback bar",
+    "code": ".player-controls .playback-progressbar { position: relative; } .player-controls .playback-progressbar::before { content: ''; width: 80px; height: 80px; bottom: calc(100% - 20px); left: 0; position: absolute; background-size: 80px 80px; background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXk2NW15cTJrdjF0YjZ5eTBjODE0M2l3ejg3bDlvYWh5NmVub2l0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/s7pdNRdwG1zxdwkazY/giphy.gif'); pointer-events: none; z-index: 0; } .player-controls .playback-progressbar::after { content: ''; width: 80px; height: 80px; bottom: calc(100% - 23px); right: 0; position: absolute; background-size: 80px 80px; background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamN4OWxiOXY4dHZ5Mm90NjU5ZjhwcjV1dDd3dHdveHFkaGYzbGRmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VxovskkECK4egQCltk/giphy.gif'); pointer-events: none; z-index: 0; }",
+    "preview": "resources/assets/snippets/dancing-hamster.png"
+  },
+  {
     "title": "Sonic Dancing",
     "description": "You get sonic dancing on your playback bar!",
     "code": ".player-controls .playback-progressbar::before { content: ''; width: 32px; height: 32px; bottom: calc(100% - 7px); right: 10px; position: absolute; image-rendering: pixelated; background-size: 32px 32px; background-image: url('https://media.tenor.com/pWqGD2PHY3kAAAAj/fortnite-dance-sonic.gif'); }",
@@ -248,7 +254,7 @@
   {
     "title": "Thicker Bars",
     "description": "Makes the song progress and volume bar thicker",
-    "code": ".x-progressBar-progressBarBg { height: 100% !important; } .x-progressBar-sliderArea { height: 100% !important; } .x-progressBar-fillColor { height: 100% !important; }",
+    "code": ".x-progressBar-progressBarBg { height: 100% !important; } .x-progressBar-sliderArea { height: 100% !important; } .x-progressBar-sliderArea * { height: 100% !important; } .x-progressBar-fillColor { height: 100% !important; }",
     "preview": "resources/assets/snippets/thicker-bars.png"
   },
   {
@@ -356,7 +362,7 @@
   {
     "title": "Switch Sidebars",
     "description": "Move the navigation panel to the right and the information sidebar to the left. Drag to resize works in reverse or pre-switching context (drag off the application window to adjust).",
-    "code": ".Root__top-container .Root__nav-bar { grid-area: right-sidebar !important;} .Root__top-container .Root__right-sidebar { grid-area: left-sidebar !important;} .Root__top-container .Root__nav-bar .os-scrollbar,.Root__top-container .Root__nav-bar .LayoutResizer__resize-bar { left: -4px !important; right: auto !important; } .Root__top-container .Root__right-sidebar .os-scrollbar, .Root__top-container .Root__right-sidebar .LayoutResizer__resize-bar {  right: -4px !important; left: auto !important; } .Root__top-container .Root__nav-bar .LayoutResizer__resize-bar { transform: scaleX(-1); } .Root__top-container .Root__right-sidebar .LayoutResizer__resize-bar { transform: scaleX(-1); }",
+    "code": ".Root__top-container .Root__nav-bar, .WBFaUw_oOfN2m4aTxggt { grid-area: right-sidebar !important;} .Root__top-container .Root__right-sidebar { grid-area: left-sidebar !important;} .Root__top-container .Root__nav-bar .os-scrollbar,.Root__top-container .Root__nav-bar .LayoutResizer__resize-bar, .WBFaUw_oOfN2m4aTxggt .os-scrollbar, .WBFaUw_oOfN2m4aTxggt .LayoutResizer__resize-bar { left: -4px !important; right: auto !important; } .Root__top-container .Root__right-sidebar .os-scrollbar, .Root__top-container .Root__right-sidebar .LayoutResizer__resize-bar {  right: -4px !important; left: auto !important; } .Root__top-container .Root__nav-bar .LayoutResizer__resize-bar, .WBFaUw_oOfN2m4aTxggt .LayoutResizer__resize-bar { transform: scaleX(-1); } .Root__top-container .Root__right-sidebar .LayoutResizer__resize-bar { transform: scaleX(-1); }",
     "preview": "resources/assets/snippets/switch-sidebars.png"
   },
   {
@@ -458,7 +464,7 @@
   {
     "title": "Rounded Thicker Bars",
     "description": "Makes the progress bar and volume bar thicker and rounded, inspired by Thicker Bars snippet.",
-    "code": ".x-progressBar-progressBarBg { height: 100% !important; --progress-bar-radius: 10px !important;} .x-progressBar-sliderArea { height: 100% !important; } .x-progressBar-fillColor { height: 100% !important; }",
+    "code": ".x-progressBar-progressBarBg { height: 100% !important; --progress-bar-radius: 10px !important;} .x-progressBar-sliderArea { height: 100% !important; } .x-progressBar-sliderArea * { height: 100% !important; } .x-progressBar-fillColor { height: 100% !important; }",
     "preview": "resources/assets/snippets/Rounded-Thicker-Bars.png"
   },
   {
@@ -538,5 +544,11 @@
     "description": "Transforms the player into a pill with glassy effect, and rounded corners for library icons.",
     "code": ".Root__right-sidebar .cover-art,.main-nowPlayingView-coverArtContainer .cover-art,.main-nowPlayingView-coverArtContainer div[style*=background]{background:0 0!important;border-radius:50%!important;opacity:1!important}.Root__right-sidebar .cover-art::after,.Root__right-sidebar .cover-art::before,.main-nowPlayingView-coverArtContainer .cover-art::after,.main-nowPlayingView-coverArtContainer .cover-art::before{display:none!important;content:none!important}.Root__right-sidebar img,.main-nowPlayingView-coverArtContainer img{border-radius:50%!important;visibility:visible!important;opacity:1!important;display:block!important}.Root__now-playing-bar,.main-nowPlayingBar-container{border-radius:99px!important;overflow:hidden!important;margin:12px!important;width:calc(100% - 24px)!important;box-shadow:0 10px 30px rgba(0,0,0,.5)!important;z-index:9999!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;background-color:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.1)!important}footer.main-nowPlayingBar-nowPlayingBar{border-radius:99px!important}.main-nowPlayingBar-left *{box-shadow:none!important;-webkit-box-shadow:none!important;filter:none!important;-webkit-filter:none!important}.main-nowPlayingBar-left .main-coverSlot-container,.main-nowPlayingBar-left .main-coverSlot-expanded{box-shadow:none!important;background:0 0!important}.main-nowPlayingBar-left canvas{display:none!important}.main-nowPlayingBar-left canvas[class*=cover],.main-nowPlayingBar-left canvas[style*=transform]{display:block!important}.main-yourLibraryX-listItemImage,.main-yourLibraryX-listItemImage>div,.x-entityImage-imageContainer{border-radius:8px!important;-webkit-mask-image:none!important;mask-image:none!important;background-color:transparent!important;overflow:hidden!important}.main-yourLibraryX-listItemImage img,.x-entityImage-image{border-radius:8px!important;-webkit-mask-image:none!important;mask-image:none!important;border:none!important;width:100%!important;height:100%!important;aspect-ratio:1/1!important;object-fit:cover!important}[class*=rounded-full],[style*=\"border-radius: 50%\"]{border-radius:8px!important}.Root__main-view,.Root__nav-bar,.Root__right-sidebar,.os-host-overflow,.os-padding,div[data-testid=main-view-container]{border-radius:24px!important;overflow:hidden!important}.main-card-card,.main-cardImage-imageWrapper,.view-home-shortcut{border-radius:12px!important;overflow:hidden!important}:root{--spice-card:var(--spice-main-elevated)!important}",
     "preview": "resources/assets/snippets/Pill-Player-Bar.png"
+  },
+  {
+    "title": "Gigantic Now Playing View & Canvas",
+    "description": "Greatly increases the width of the Now Playing View panel beyond the default limit (feel free to change it to your liking) at the cost of losing the ability to drag-resize it and enhances it with a cleaner look by removing the dark gradient over the canvas loop video and moving a few elements further down.",
+    "code": ".NowPlayingView { border-radius: 8px !important; } [data-right-sidebar-hidden=false] .Root__right-sidebar, .npv-nowPlayingbar-container, .oXO9_yYs6JyOwkBn8E4a { width: 670px !important; } [data-right-sidebar-hidden=true] .Root__right-sidebar, .npv-nowPlayingbar-container { width: 0px !important; } .main-nowPlayingView-nowPlayingGrid:has(.canvasVideoContainerNPV video) { .main-nowPlayingView-contextItemInfo { margin-top: 30vh !important; } [aria-hidden=false] .HIaySI1OwWK1MLojie8y, .fetnShpUoCol51CFSqwn { margin-top: 26vh !important; margin-bottom: -31vh !important; } .canvasVideoContainerNPV { margin-top: -5vh !important; } .Of__Db4QgB9osz_mFxhw:before, .Of__Db4QgB9osz_mFxhw:after { background: transparent !important; } }",
+    "preview": "resources/assets/snippets/giga_npv_canvas.png"
   }
 ]
